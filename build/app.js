@@ -1,6 +1,6 @@
 (function() {
   React.render(
-    <h1>Hello, React and JSX!</h1>,
+    React.createElement("h1", null, "Hello, React and JSX!"),
     document.getElementById('app')
   );
 })();
