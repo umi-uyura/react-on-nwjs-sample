@@ -1,13 +1,7 @@
 'use strict';
 
 (function() {
-  var Hello = React.createClass({
-    render: function() {
-      return (
-          <h1>Hello, {this.props.name} !</h1>
-      );
-    }
-  });
+  var Hello = require('./Hello.jsx');
 
   React.render(
     <Hello name='React Component' />,

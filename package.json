@@ -7,6 +7,8 @@
     "start": "nw",
     "build": "jsx ./src ./build --extension jsx",
     "watch": "jsx --watch ./src ./build --extension jsx",
+    "browserify": "browserify build/app.js -o build/bundle.js",
+    "reactify": "browserify -t reactify src/app.jsx -o build/bundle.js",
     "package": "nwbuild -p osx64,win64 .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +19,9 @@
     "react": "^0.13.1"
   },
   "devDependencies": {
+    "browserify": "^10.2.0",
     "node-webkit-builder": "^1.0.11",
-    "react-tools": "^0.13.2"
+    "react-tools": "^0.13.2",
+    "reactify": "^1.1.1"
   }
 }
