@@ -7,6 +7,7 @@
     "start": "nw",
     "browserify": "browserify build/app.js -o build/bundle.js",
     "reactify": "browserify -t reactify src/app.jsx -o build/bundle.js",
+    "watchify": "watchify -t reactify src/app.jsx -o build/bundle.js -v",
     "package": "nwbuild -p osx64,win64 .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +20,7 @@
   "devDependencies": {
     "browserify": "^10.2.0",
     "node-webkit-builder": "^1.0.11",
-    "reactify": "^1.1.1"
+    "reactify": "^1.1.1",
+    "watchify": "^3.2.1"
   }
 }
