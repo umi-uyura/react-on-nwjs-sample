@@ -1,6 +1,7 @@
 'use strict';
 
 (function() {
+  var React = require('react');
   var Hello = require('./Hello.jsx');
 
   React.render(
