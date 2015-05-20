@@ -6,6 +6,13 @@ Reactを使ったNW.jsアプリケーションの学習
 更新履歴
 --------
 
+### Tag: [20150520](https://github.com/umi-uyura/react-on-nwjs-sample/tree/20150520)
+
+Watchify導入
+
+<http://umi-uyura.hatenablog.com/entry/2015/05/20/090130>
+
+
 ### Tag: [20150518](https://github.com/umi-uyura/react-on-nwjs-sample/tree/20150518)
 
 Browserify + Reactify
