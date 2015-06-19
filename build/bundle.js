@@ -19752,10 +19752,16 @@ module.exports = require('./lib/React');
 
 var React = require('react');
 
-var Hello = React.createClass({displayName: "Hello",
-  render: function() {
-    return (
-      React.createElement("h1", null, "Hello, ", this.props.name, " World !!!")
+var Hello = React.createClass({
+  displayName: 'Hello',
+
+  render: function render() {
+    return React.createElement(
+      'h1',
+      null,
+      'Hello, ',
+      this.props.name,
+      ' World !!!'
     );
   }
 });
@@ -19765,14 +19771,11 @@ module.exports = Hello;
 },{"react":156}],158:[function(require,module,exports){
 'use strict';
 
-(function() {
+(function () {
   var React = require('react');
   var Hello = require('./Hello.jsx');
 
-  React.render(
-    React.createElement(Hello, {name: "React Component"}),
-    document.getElementById('app')
-  );
+  React.render(React.createElement(Hello, { name: 'Babel' }), document.getElementById('app'));
 })();
 
 },{"./Hello.jsx":157,"react":156}]},{},[158]);

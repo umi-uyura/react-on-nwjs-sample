@@ -5,7 +5,7 @@
   var Hello = require('./Hello.jsx');
 
   React.render(
-    <Hello name='React Component' />,
+    <Hello name='Babel' />,
     document.getElementById('app')
   );
 })();
