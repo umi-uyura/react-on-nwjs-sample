@@ -7,7 +7,11 @@
     "start": "nw",
     "babelify": "browserify -t babelify src/app.jsx -o build/bundle.js",
     "watchify": "watchify -t babelify src/app.jsx -o build/bundle.js -v",
-    "package": "nwbuild -p osx64,win64 .",
+    "dist:mkdir": "mkdir -p build/dist/build",
+    "dist:copy": "cp index.html build/dist && cp package.json build/dist && cp -R build/bundle.js build/dist/build",
+    "dist:npm": "cd build/dist && npm install --production",
+    "dist:build": "nwbuild -p osx64,win64 -v 0.12.3 build/dist",
+    "dist": "npm run dist:mkdir && npm run dist:copy && npm run dist:npm && npm run dist:build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Umi Uyura",
