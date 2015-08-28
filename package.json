@@ -12,6 +12,7 @@
     "dist:npm": "cd build/dist && npm install --production",
     "dist:build": "nwbuild -p osx64,win64 -v 0.12.3 build/dist",
     "dist": "npm run babelify && npm run dist:mkdir && npm run dist:copy && npm run dist:npm && npm run dist:build",
+    "clean": "rm -rf build/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Umi Uyura",
