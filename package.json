@@ -18,13 +18,13 @@
   "author": "Umi Uyura",
   "license": "MIT",
   "dependencies": {
-    "nw": "^0.12.2",
+    "nw": "^0.12.3",
     "react": "^0.13.3"
   },
   "devDependencies": {
-    "babelify": "^6.1.2",
-    "browserify": "^10.2.4",
-    "node-webkit-builder": "^1.0.12",
-    "watchify": "^3.2.2"
+    "babelify": "^6.2.0",
+    "browserify": "^11.0.1",
+    "nw-builder": "^2.0.2",
+    "watchify": "^3.3.1"
   }
 }
